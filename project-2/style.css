@@ -1,0 +1,85 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #facc15;
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Skills */
+.skills {
+    padding: 50px;
+    text-align: center;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #1e293b;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Projects */
+.projects {
+    padding: 50px;
+    background: #020617;
+    text-align: center;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
