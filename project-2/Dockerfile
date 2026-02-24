@@ -1,9 +1,18 @@
 FROM nginx:alpine
 
-RUN rm -rf /usr/share/nginx/html/*
+# Remove default nginx config
+RUN rm /etc/nginx/conf.d/default.conf
 
-COPY index.html /usr/share/nginx/html/
-COPY style.css /usr/share/nginx/html/
+# Create web root directory
+RUN mkdir -p /var/www/html
+
+# Copy custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy website files
+COPY index.html /var/www/html/
+COPY style.css /var/www/html/
 
 EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]
